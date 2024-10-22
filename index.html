@@ -107,13 +107,15 @@
             }
 
             function handleWordCount(){
-                const totalWords = inputElement.value.split("").length;
+                const totalWords = inputElement.value.split(" ").length;
 
-                outputElement.value = `word count: ${totalWords}`;
+                outputElement.value = `Word count: ${totalWords}`;
             }
+        
 
             function handleCharacterCount(){
                 outputElement.value = `Character Count: ${inputElement.value.length}`;
+                
             }
            
         </script>
